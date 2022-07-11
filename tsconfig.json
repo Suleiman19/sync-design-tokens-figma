@@ -1,0 +1,20 @@
+{
+  "extends": "@create-figma-plugin/tsconfig",
+  "compilerOptions": {
+    "lib": ["es2021"],
+    "typeRoots": [
+      "node_modules/@figma",
+      "node_modules/@types"
+    ],
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/utils.ts"
+  ]
+}
